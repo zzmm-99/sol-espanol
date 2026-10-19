@@ -1,0 +1,29 @@
+﻿SOL · 西语日常 — 分享给朋友
+================================
+
+这是一个纯静态网站，不需要服务器或数据库。要让朋友通过互联网访问，把“SOL-西语日常-网站”文件夹上传到任意静态托管平台即可。
+
+推荐：Netlify Drop（最简单）
+1. 解压 SOL-西语日常-网站.zip。
+2. 电脑浏览器打开 https://app.netlify.com/drop 。
+3. 把整个“SOL-西语日常-网站”文件夹拖进页面。
+4. 等待部署完成，会得到一个 https://xxxx.netlify.app 地址。
+5. 把这个地址发给朋友即可。可在站点设置里换成更好记的子域名。
+
+替代：Cloudflare Pages
+1. 登录 https://dash.cloudflare.com/ 。
+2. 进入 Workers & Pages → Create → Pages → Upload assets。
+3. 上传“SOL-西语日常-网站”文件夹或 ZIP。
+4. 部署完成后会得到 https://xxxx.pages.dev 地址。
+
+替代：GitHub Pages
+1. 新建一个公开仓库，把解压后的 index.html 和 assets 文件夹上传。
+2. 仓库 Settings → Pages → Deploy from a branch → main / root。
+3. 保存后会得到 https://用户名.github.io/仓库名/ 地址。
+
+重要说明
+- 每个朋友的学习记录保存在自己的浏览器 localStorage 中，彼此独立，不会互相覆盖。
+- 网站没有登录、排行榜或云端同步；如果需要共享班级进度或多人排行榜，需要额外开发后端。
+- 通过 Netlify / Cloudflare / GitHub Pages 部署会自动获得 HTTPS，手机上的跟读评分才能正常申请麦克风权限。
+- 免费套餐对约 5 MB 的静态网站足够；不要把平台项目删除，否则分享链接会失效。
+- 国内访问国际平台如果不稳定，可以把同样的文件夹上传到腾讯云 COS、阿里云 OSS 等静态网站托管服务。
